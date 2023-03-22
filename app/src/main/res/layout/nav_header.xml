@@ -9,19 +9,20 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher_round"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:text="IDI Home Based Care app"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:layout_width="187dp"
+        android:layout_height="75dp"
+        android:src="@drawable/normad_icon1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Info@idi.co.ug"/>
+        android:paddingTop="8dp"
+        android:text="New Order for Managing Anything Data"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rsenono@idi.co.ug"/>
 
 </LinearLayout>

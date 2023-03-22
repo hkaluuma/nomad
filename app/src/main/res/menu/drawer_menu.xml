@@ -4,43 +4,47 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_home"
+        <item android:id="@+id/nav_countries"
             android:icon="@drawable/ic_baseline_access_time_24"
-            android:title="Home" />
-        <item android:id="@+id/nav_addpatient"
+            android:title="COUNTRIES" />
+        <item android:id="@+id/nav_districts"
             android:icon="@drawable/ic_baseline_access_time_24"
-            android:title="Add Patient" />
-        <item android:id="@+id/nav_patients"
+            android:title="DISTRICTS" />
+        <item android:id="@+id/nav_subcounties"
             android:icon="@drawable/ic_baseline_access_time_24"
-            android:title="Show Alerts" />
-        <item android:id="@+id/nav_checkup"
+            android:title="SUBCOUNTIES" />
+        <item android:id="@+id/nav_facilities"
             android:icon="@drawable/ic_baseline_access_time_24"
-            android:title="Daily Checkup" />
-        <item android:id="@+id/nav_discharge"
+            android:title="FACILITIES" />
+        <item android:id="@+id/nav_departments"
         android:icon="@drawable/ic_baseline_access_time_24"
-        android:title="Deactivate Patient" />
-
-        <!-- <item android:id="@+id/nav_addfacility"
-            android:icon="@drawable/ic_facility24"
-            android:title="Add Facility" /> -->
-
-        <!-- <item android:id="@+id/nav_photo"
-            android:icon="@drawable/ic_baseline_auto_graph_24"
-            android:title="Reports" /> -->
+        android:title="DEPARTMENTS" />
+        <item android:id="@+id/nav_sections"
+            android:icon="@drawable/ic_baseline_access_time_24"
+            android:title="SECTIONS" />
 
     </group>
 
     <item android:title="Others">
         <menu>
-            <item android:id="@+id/nav_maps"
+            <item android:id="@+id/nav_authorities"
                 android:icon="@drawable/ic_baseline_access_time_24"
-                android:title="Map" />
-            <item android:id="@+id/nav_call"
+                android:title="AUTHORITIES" />
+            <item android:id="@+id/nav_equipment"
                 android:icon="@drawable/ic_baseline_access_time_24"
-                android:title="Contact Us"/>
-          <item android:id="@+id/nav_logout"
+                android:title="EQUIPMENT"/>
+          <item android:id="@+id/nav_equipment_class"
                 android:icon="@drawable/ic_baseline_access_time_24"
-                android:title="Logout"/>
+                android:title="EQ CLASSFICATION"/>
+            <item android:id="@+id/nav_manufacturer"
+                android:icon="@drawable/ic_baseline_access_time_24"
+                android:title="MANUFACTURER" />
+            <item android:id="@+id/nav_suppliers"
+                android:icon="@drawable/ic_baseline_access_time_24"
+                android:title="SUPPLIERS"/>
+            <item android:id="@+id/nav_score_sheet"
+                android:icon="@drawable/ic_baseline_access_time_24"
+                android:title="SCORE SHEET"/>
         </menu>
     </item>
 </menu>

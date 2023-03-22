@@ -44,66 +44,68 @@ public class NavigationMenuActivity extends AppCompatActivity implements Navigat
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
-            case R.id.nav_home:
+            case R.id.nav_countries:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
                         MainActivity.class
                 ));
                 break;
-            case R.id.nav_checkup:
+            case R.id.nav_districts:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
                         MainActivity.class
                 ));
                 break;
-            case R.id.nav_maps:
-                String uri = "https://www.google.com/maps/d/u/0/viewer?mid=1dJjQ4jCUPR89umU3AIBPn59R9Pqp77Ms&ll=0.40092934615056425%2C32.57792117264799&z=12\n";
-                Intent locIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                startActivity(locIntent);
+            case R.id.nav_subcounties:
+                startActivity(new Intent(
+                        NavigationMenuActivity.this,
+                        MainActivity.class ));
                 break;
-            case R.id.nav_patients:
+            case R.id.nav_facilities:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
                         MainActivity.class
                 ));
                 break;
-            case R.id.nav_addpatient:
+            case R.id.nav_departments:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
                         MainActivity.class
                 ));
                 break;
-            case R.id.nav_call:
+            case R.id.nav_sections:
                 //makecall();
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
                         MainActivity.class
                 ));
                 break;
-            case R.id.nav_discharge:
-                //makecall();
-                startActivity(new Intent(
-                        NavigationMenuActivity.this,
+            case R.id.nav_authorities:
+                startActivity(new Intent(NavigationMenuActivity.this,
                         MainActivity.class
                 ));
                 break;
-           /* case R.id.nav_photo:
-                //startActivity(new Intent(MainActivity.this, UploadImageActivity.class));
-                startActivity(new Intent(MainActivity.this, ReportActivity.class));
-                break; */
-            case R.id.nav_logout:
-                //Toast.makeText(MainActivity.this, "Logging out ... ", Toast.LENGTH_SHORT).show();
-                //StyleableToast.makeText(MainActivity.this, "Logging out ...", R.style.exampleToast).show();
+            case R.id.nav_equipment:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
                         LoginActivity.class
                 ));
                 break;
-            /*case R.id.nav_addfacility:
-                //Toast.makeText(MainActivity.this, "Logging out ... ", Toast.LENGTH_SHORT).show();
-                //StyleableToast.makeText(MainActivity.this, "Logging out ...", R.style.exampleToast).show();
-                startActivity(new Intent(MainActivity.this, AddFacilityActivity.class));
-                break; */
+            case R.id.nav_equipment_class:
+                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
+                break;
+
+            case R.id.nav_score_sheet:
+                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
+                break;
+            case R.id.nav_manufacturer:
+                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
+                break;
+            case R.id.nav_suppliers:
+                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
+                break;
+            default:
+                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
 
         }
         drawer.closeDrawer(GravityCompat.START);
