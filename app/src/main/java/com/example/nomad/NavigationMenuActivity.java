@@ -7,8 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -41,68 +41,69 @@ public class NavigationMenuActivity extends AppCompatActivity implements Navigat
         toggle.syncState();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case R.id.nav_countries:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
-                        MainActivity.class
+                        CountriesActivity.class
                 ));
                 break;
             case R.id.nav_districts:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
-                        MainActivity.class
+                        DistrictActivity.class
                 ));
                 break;
             case R.id.nav_subcounties:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
-                        MainActivity.class ));
+                        SubCountriesActivity.class ));
                 break;
             case R.id.nav_facilities:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
-                        MainActivity.class
+                        FacilitiesActivity.class
                 ));
                 break;
             case R.id.nav_departments:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
-                        MainActivity.class
+                        DepartmentsActivity.class
                 ));
                 break;
             case R.id.nav_sections:
                 //makecall();
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
-                        MainActivity.class
+                        SectionsActivity.class
                 ));
                 break;
             case R.id.nav_authorities:
                 startActivity(new Intent(NavigationMenuActivity.this,
-                        MainActivity.class
+                        AuthoritiesActivity.class
                 ));
                 break;
             case R.id.nav_equipment:
                 startActivity(new Intent(
                         NavigationMenuActivity.this,
-                        LoginActivity.class
+                        EquipmentActivity.class
                 ));
                 break;
             case R.id.nav_equipment_class:
-                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
+                startActivity(new Intent(NavigationMenuActivity.this, EqClassificationActivity2.class));
                 break;
 
             case R.id.nav_score_sheet:
-                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
+                startActivity(new Intent(NavigationMenuActivity.this, ScoreSheetActivity.class));
                 break;
             case R.id.nav_manufacturer:
-                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
+                startActivity(new Intent(NavigationMenuActivity.this, ManufacturerActivity.class));
                 break;
             case R.id.nav_suppliers:
-                startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
+                startActivity(new Intent(NavigationMenuActivity.this, SuppliersActivity.class));
                 break;
             default:
                 startActivity(new Intent(NavigationMenuActivity.this, MainActivity.class));
