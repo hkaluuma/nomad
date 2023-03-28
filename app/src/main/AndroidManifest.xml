@@ -20,7 +20,7 @@
             android:exported="false" />
         <activity
             android:parentActivityName=".MainActivity"
-            android:label="SUPPLIER"
+            android:label="SUPPLIERS"
             android:name=".SuppliersActivity"
             android:exported="false" />
         <activity
