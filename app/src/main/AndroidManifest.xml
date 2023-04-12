@@ -14,18 +14,110 @@
         android:theme="@style/Theme.Nomad"
         tools:targetApi="31">
         <activity
-            android:name=".SplashScreen"
+        android:parentActivityName=".MainActivity"
+            android:label="SCORE SHEET"
+            android:name=".ScoreSheetActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="SUPPLIERS"
+            android:name=".SuppliersActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="MANUFACTURER"
+            android:name=".ManufacturerActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="EQ CLASSIFICATION"
+            android:name=".EqClassificationActivity2"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="EQUIPMENT"
+            android:name=".EquipmentActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="AUTHORITIES"
+            android:name=".AuthoritiesActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="SECTIONS"
+            android:name=".SectionsActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="DEPARTMENTS"
+            android:name=".DepartmentsActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="FACILITIES"
+            android:name=".FacilitiesActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="SUB-COUNTRIES"
+            android:name=".SubCountriesActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="DISTRICT"
+            android:name=".DistrictActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="COUNTRIES"
+            android:name=".CountriesActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="MAINTENANCE REQUESTS"
+            android:name=".MaintenanceRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="NEED REPLACEMENT"
+            android:name=".NeedReplacementActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="NEED REPAIR"
+            android:name=".NeedRepairActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="IN GOOD CONDITION"
+            android:name=".InGoodConditionActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="JOB CARDS"
+            android:name=".JobCardsActivity"
+            android:exported="false" />
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="TOTAL INVENTORY"
+            android:name=".TotalInventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationMenuActivity"
             android:exported="true"
-            android:theme="@style/SplashScreen">
+            android:theme="@style/Theme.Nomad.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".NavigationMenuActivity"
             android:exported="true"
-            android:theme="@style/Theme.Nomad.NoActionBar">
+            android:theme="@style/Theme.Nomad.NoActionBar"
+            tools:ignore="DuplicateActivity">
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -35,7 +127,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Nomad.NoActionBar"></activity>
+            android:theme="@style/Theme.Nomad.NoActionBar" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen" />
     </application>
 
 </manifest>
