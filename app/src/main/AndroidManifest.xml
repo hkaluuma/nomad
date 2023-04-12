@@ -14,13 +14,18 @@
         android:theme="@style/Theme.Nomad"
         tools:targetApi="31">
         <activity
-            android:name=".NavigationMenuActivity"
-            android:theme="@style/Theme.Nomad.NoActionBar"
-            android:exported="true">
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".NavigationMenuActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Nomad.NoActionBar">
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -29,10 +34,8 @@
             android:theme="@style/Theme.Nomad.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.Nomad.NoActionBar"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"
+            android:theme="@style/Theme.Nomad.NoActionBar"></activity>
     </application>
 
 </manifest>
