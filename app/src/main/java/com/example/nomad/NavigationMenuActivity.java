@@ -11,7 +11,10 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 public class NavigationMenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -21,7 +24,18 @@ public class NavigationMenuActivity extends AppCompatActivity implements Navigat
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_menu);
+
         //new codes
+
+        FloatingActionButton btn = findViewById(R.id.floatingActionButton);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NavigationMenuActivity.this, RegistrationActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

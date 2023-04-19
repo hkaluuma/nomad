@@ -14,100 +14,104 @@
         android:theme="@style/Theme.Nomad"
         tools:targetApi="31">
         <activity
-        android:parentActivityName=".MainActivity"
-            android:label="SCORE SHEET"
+            android:name=".RegistrationActivity"
+            android:exported="false"
+            android:label="Registration"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".ScoreSheetActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="SCORE SHEET"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="SUPPLIERS"
             android:name=".SuppliersActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="SUPPLIERS"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="MANUFACTURER"
             android:name=".ManufacturerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="MANUFACTURER"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="EQ CLASSIFICATION"
             android:name=".EqClassificationActivity2"
-            android:exported="false" />
+            android:exported="false"
+            android:label="EQ CLASSIFICATION"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="EQUIPMENT"
             android:name=".EquipmentActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="EQUIPMENT"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="AUTHORITIES"
             android:name=".AuthoritiesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="AUTHORITIES"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="SECTIONS"
             android:name=".SectionsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="SECTIONS"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="DEPARTMENTS"
             android:name=".DepartmentsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="DEPARTMENTS"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="FACILITIES"
             android:name=".FacilitiesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="FACILITIES"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="SUB-COUNTRIES"
             android:name=".SubCountriesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="SUB-COUNTRIES"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="DISTRICT"
             android:name=".DistrictActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="DISTRICT"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="COUNTRIES"
             android:name=".CountriesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="COUNTRIES"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="MAINTENANCE REQUESTS"
             android:name=".MaintenanceRequestsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="MAINTENANCE REQUESTS"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="NEED REPLACEMENT"
             android:name=".NeedReplacementActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="NEED REPLACEMENT"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="NEED REPAIR"
             android:name=".NeedRepairActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="NEED REPAIR"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="IN GOOD CONDITION"
             android:name=".InGoodConditionActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="IN GOOD CONDITION"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="JOB CARDS"
             android:name=".JobCardsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="JOB CARDS"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:parentActivityName=".MainActivity"
-            android:label="TOTAL INVENTORY"
             android:name=".TotalInventoryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="TOTAL INVENTORY"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".NavigationMenuActivity"
             android:exported="true"
-            android:theme="@style/Theme.Nomad.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Nomad.NoActionBar"></activity>
         <activity
             android:name=".LoginActivity"
             android:exported="false"
@@ -117,17 +121,16 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Nomad.NoActionBar" />
-
         <activity
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
