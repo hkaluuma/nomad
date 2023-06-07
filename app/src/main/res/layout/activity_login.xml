@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -15,6 +13,7 @@
         android:layout_marginBottom="10dp"
         tools:ignore="ContentDescription" />
     <EditText
+        android:id="@+id/ed_username"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:padding="5dp"
@@ -27,15 +26,19 @@
         android:inputType="textPersonName"
         android:layout_below="@+id/imageview"
         tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
-    <EditText android:layout_width="match_parent"
+
+    <EditText
+        android:id="@+id/ed_pwd"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:autofillHints="password"
-        android:inputType="textVisiblePassword"
-        android:layout_margin="5dp"
-        android:hint="password"
-        android:textSize="20sp"
         android:layout_below="@+id/edit_text_username"
+        android:layout_margin="5dp"
+        android:autofillHints="password"
+        android:hint="password"
+        android:inputType="textVisiblePassword"
+        android:textSize="20sp"
         tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
+
     <Button
         android:layout_height="wrap_content"
         android:id="@+id/login_btn"

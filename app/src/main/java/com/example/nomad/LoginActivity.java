@@ -1,4 +1,6 @@
 package com.example.nomad;
+import static android.content.ContentValues.TAG;
+
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -117,8 +119,8 @@ public class LoginActivity extends AppCompatActivity {
             //upload data to the database
             try {
                 DefaultHttpClient httpclient = new DefaultHttpClient();
-                HttpPost httppost = new HttpPost(login_url);
-                ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(3);
+                HttpPost httppost = new HttpPost("http://172.31.2.26/nomad/login.php");
+                ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
                 nameValuePairs.add(new BasicNameValuePair("biz_username", username));
                 nameValuePairs.add(new BasicNameValuePair("biz_pass", pass));
                 httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
@@ -134,7 +136,7 @@ public class LoginActivity extends AppCompatActivity {
                 responcefromphp = sb.toString();
                 inputStream.close();
             } catch (Exception e) {
-                Toast.makeText(getApplicationContext(), "Try Again", Toast.LENGTH_LONG).show();
+                Log.i(TAG, "doInBackground *********: "+ responcefromphp);
             }
             return responcefromphp;
         }
@@ -146,6 +148,8 @@ public class LoginActivity extends AppCompatActivity {
             pdialog.dismiss();
             if(responcefromphp.equals("0")){
                 Toast.makeText(LoginActivity.this, "Login Failed customer not Registered.", Toast.LENGTH_SHORT).show();
+            } else if(responcefromphp.equals(null)) {
+                Toast.makeText(LoginActivity.this, "Login Failed null returned.", Toast.LENGTH_SHORT).show();
             } else {
                 String[] usercredentials = responcefromphp.split("#");
                 Log.e("responcefromphp", responcefromphp);
