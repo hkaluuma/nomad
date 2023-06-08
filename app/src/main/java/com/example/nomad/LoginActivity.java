@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     String username, pass;
     //instantiate config class
     Config config = new Config();
-    String login_url= "https://"+config.server_ip+"/nomad/login.php";
+    String login_url= "http://"+config.server_ip+"/nomad/login.php";
     //shared preferences variables
     SharedPreferences sharedpreferences;
     public static final String MYPREFERENCES_LOGIN = "MyPreferences_002";

@@ -1,108 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RegistrationActivity"
-    android:orientation="vertical">
-    <ImageView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:src="@drawable/normad_icon1"
-        android:layout_gravity="center"
-        tools:ignore="ContentDescription" />
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_gravity="center"
-        android:text="Registration Form"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:ignore="HardcodedText"
-        />
+        android:layout_height="match_parent"
+        tools:context=".RegistrationActivity"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edt_name"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="5dp"
-        android:autofillHints="name"
-        android:inputType="text"
-        android:padding="10dp"
-        android:hint="enter name"
-        android:textSize="18sp"
-        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize" />
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:id="@+id/edt_username"
-        android:layout_below="@+id/edit_text_id"
-        android:autofillHints="username"
-        android:textColor="@color/black"
-        android:inputType="text"
-        android:textSize="18sp"
-        android:hint=" enter username"
-        tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
-    <EditText
-        android:id="@+id/edt_email"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:inputType="textEmailAddress"
-        android:layout_below="@+id/edit_text_id1"
-        android:hint="enter email"
-        android:textSize="18sp"
-        tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize"
-        android:importantForAutofill="no" />
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edt_password"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="11dp"
-        android:autofillHints="password"
-        android:inputType="textPassword"
-        android:layout_below="@+id/edit_text_id2"
-        android:hint="enter password"
-        android:textSize="18sp"
-        tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
-    <EditText
-        android:id="@+id/edt_password2"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:autofillHints="confirm_password"
-        android:inputType="textPassword"
-        android:layout_below="@+id/edit_text_id3"
-        android:hint="confirm_password"
-        android:textSize="18sp"
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/normad_icon1"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:text="Registration Form"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"
+                />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:autofillHints="name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:hint="enter name"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/edt_username"
+                android:layout_below="@+id/edit_text_id"
+                android:autofillHints="username"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:hint=" enter username"
+                tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/edit_text_id1"
+                android:hint="enter email"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="11dp"
+                android:autofillHints="password"
+                android:inputType="textPassword"
+                android:layout_below="@+id/edit_text_id2"
+                android:hint="enter password"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
+            <EditText
+                android:id="@+id/edt_password2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:autofillHints="confirm_password"
+                android:inputType="textPassword"
+                android:layout_below="@+id/edit_text_id3"
+                android:hint="confirm_password"
+                android:textSize="18sp"
 
 
-        tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
+                tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/edit_text_id4"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:id="@+id/btn_register"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        android:text="REGISTER"
-        tools:ignore="HardcodedText,ObsoleteLayoutParam,VisualLintButtonSize" />
-
-
-</LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/edit_text_id4"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:id="@+id/btn_register"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="REGISTER"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,VisualLintButtonSize" />
+             </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

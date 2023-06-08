@@ -1,5 +1,7 @@
 package com.example.nomad;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -8,6 +10,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,7 +32,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     //instantiate config class
     Config config = new Config();
-    String register_url= "https://"+config.server_ip+"/nomad/register.php";
+    String register_url= "http://"+config.server_ip+"/nomad/register.php";
     //global variables
     String name, email, username, password;
 
@@ -125,7 +128,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 responcefromphp = sb.toString();
                 inputStream.close();
             } catch (Exception e) {
-                Toast.makeText(getApplicationContext(), "Try Again", Toast.LENGTH_LONG).show();
+                Log.i(TAG, "doInBackground: Try Again "+ responcefromphp);
             }
             return responcefromphp;
         }
