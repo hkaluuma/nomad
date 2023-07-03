@@ -4,6 +4,9 @@
     package="com.example.nomad">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,10 +22,7 @@
             android:exported="true"
             android:label="Registration"
             android:parentActivityName=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".ScoreSheetActivity"
@@ -117,7 +117,8 @@
         <activity
             android:name=".NavigationMenuActivity"
             android:exported="true"
-            android:theme="@style/Theme.Nomad.NoActionBar"></activity>
+            android:theme="@style/Theme.Nomad.NoActionBar">
+        </activity>
         <activity
             android:name=".LoginActivity"
             android:exported="false"
@@ -132,7 +133,10 @@
             android:exported="true"
             android:theme="@style/SplashScreen">
 
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>
