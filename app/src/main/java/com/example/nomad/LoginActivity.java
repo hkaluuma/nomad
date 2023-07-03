@@ -68,8 +68,11 @@ public class LoginActivity extends AppCompatActivity {
                 } else {
                     if (haveNetworkConnection()) {
                         // connected
-                        CreateLogin createLogin = new CreateLogin();
-                        createLogin.execute();
+                       // CreateLogin createLogin = new CreateLogin();
+                        //createLogin.execute();
+                        Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
                     } else {
                         // not connected
                         Toast.makeText(LoginActivity.this, "No internet Connection", Toast.LENGTH_SHORT).show();
