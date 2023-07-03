@@ -88,7 +88,7 @@ public class RegistrationActivity extends AppCompatActivity {
     //inner class
     @SuppressWarnings("deprecation")
     class Registerclass extends AsyncTask<String, String, String>{
-        String responcefromphp;
+        String responsefromphp;
         //create progress dialog class
         ProgressDialog pdialog;
 
@@ -109,8 +109,8 @@ public class RegistrationActivity extends AppCompatActivity {
             //upload data to the database
             try {
                 DefaultHttpClient httpclient = new DefaultHttpClient();
-                HttpPost httppost = new HttpPost(register_url);
-                ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(3);
+                HttpPost httppost = new HttpPost("http://172.31.2.75/nomad/register.php");
+                ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(4);
                 nameValuePairs.add(new BasicNameValuePair("name", name));
                 nameValuePairs.add(new BasicNameValuePair("username", username));
                 nameValuePairs.add(new BasicNameValuePair("pass", password));
@@ -125,21 +125,21 @@ public class RegistrationActivity extends AppCompatActivity {
                     sb.append(line);
                 }
                 rd.close();
-                responcefromphp = sb.toString();
+                responsefromphp = sb.toString();
                 inputStream.close();
             } catch (Exception e) {
-                Log.i(TAG, "doInBackground: Try Again "+ responcefromphp);
+                Log.i(TAG, "doInBackground: *****"+ responsefromphp);
             }
-            return responcefromphp;
+            return responsefromphp;
         }
 
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             pdialog.dismiss();
-            if(responcefromphp.equals("0")){
+            if(responsefromphp.equals("0")){
                 Toast.makeText(RegistrationActivity.this, "Login Failed customer not Registered.", Toast.LENGTH_SHORT).show();
-            } else if(responcefromphp.equals("1")){
+            } else if(responsefromphp.equals("1")){
                 Toast.makeText(RegistrationActivity.this, "Registration Successful.", Toast.LENGTH_SHORT).show();
             } else{
                 Toast.makeText(RegistrationActivity.this, "Technical Failure. Contact Admin.", Toast.LENGTH_SHORT).show();
