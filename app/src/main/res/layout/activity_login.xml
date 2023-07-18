@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bluetablet"
     android:orientation="vertical">
 
     <ImageView
@@ -12,20 +13,21 @@
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         tools:ignore="ContentDescription" />
+
     <EditText
         android:id="@+id/ed_username"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:padding="5dp"
-        android:layout_margin="5dp"
-        android:hint="username"
-        android:autofillHints="username"
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        android:textStyle="normal"
-        android:inputType="textPersonName"
+        android:layout_height="47dp"
         android:layout_below="@+id/imageview"
-        tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:autofillHints="username"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/ed_pwd"
@@ -34,9 +36,11 @@
         android:layout_below="@+id/edit_text_username"
         android:layout_margin="5dp"
         android:autofillHints="password"
+        android:textColor="#FFFFFF"
         android:hint="password"
         android:inputType="textVisiblePassword"
         android:textSize="20sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
 
     <Button

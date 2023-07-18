@@ -17,6 +17,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.HttpResponse;
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.NameValuePair;
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -48,17 +51,21 @@ public class LoginActivity extends AppCompatActivity {
         final EditText editTextpassword = findViewById(R.id.ed_pwd);
         final Button btn1 = findViewById(R.id.login_btn);
         final Button btn2 = findViewById(R.id.forgot_password);
+        YoYo.with(Techniques.Shake).duration(10000).repeat(10).playOn(btn1);
+        YoYo.with(Techniques.Shake).duration(10000).repeat(10).playOn(btn2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent textViewcreateaccintent= new Intent(LoginActivity.this, Forgot_password.class);
-                startActivity(textViewcreateaccintent);
+                YoYo.with(Techniques.FlipOutX).duration(100).repeat(0).playOn(btn2);
+                Intent forgotintent = new Intent(LoginActivity.this, Forgot_password.class);
+                startActivity(forgotintent);
             }
         });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                YoYo.with(Techniques.Flash).duration(100).repeat(0).playOn(btn1);
                 pass = editTextpassword.getText().toString();
                 username = editTextusername.getText().toString();
                 if (username.isEmpty()) {

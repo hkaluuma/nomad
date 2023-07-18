@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 total_inventory.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        YoYo.with(Techniques.Shake).duration(1000).repeat(0).playOn(total_inventory);
+                        YoYo.with(Techniques.Shake).duration(100).repeat(0).playOn(total_inventory);
                         //YoYo.with(Techniques.Tada).duration(1000).repeat(0).playOn(img);
                         Intent intent;
                         intent = new Intent(MainActivity.this, TotalInventoryActivity.class);
