@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -47,12 +48,15 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         //new codes
+        ImageView imgicon = findViewById(R.id.nomad_icon);
         final EditText editTextusername = findViewById(R.id.ed_username);
         final EditText editTextpassword = findViewById(R.id.ed_pwd);
         final Button btn1 = findViewById(R.id.login_btn);
         final Button btn2 = findViewById(R.id.forgot_password);
         YoYo.with(Techniques.Shake).duration(10000).repeat(10).playOn(btn1);
         YoYo.with(Techniques.Shake).duration(10000).repeat(10).playOn(btn2);
+        YoYo.with(Techniques.DropOut).duration(100).repeat(10).playOn(imgicon);
+
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,6 +70,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 YoYo.with(Techniques.Flash).duration(100).repeat(0).playOn(btn1);
+                YoYo.with(Techniques.BounceIn).duration(100).repeat(10).playOn(imgicon);
                 pass = editTextpassword.getText().toString();
                 username = editTextusername.getText().toString();
                 if (username.isEmpty()) {

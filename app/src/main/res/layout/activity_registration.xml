@@ -19,7 +19,7 @@
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:src="@drawable/normad_icon1"
+                android:src="@drawable/nomad_no"
                 android:layout_gravity="center"
                 tools:ignore="ContentDescription" />
 

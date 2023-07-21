@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="187dp"
         android:layout_height="75dp"
-        android:src="@drawable/normad_icon1" />
+        android:src="@drawable/nomad_no" />
 
     <TextView
         android:layout_width="wrap_content"
