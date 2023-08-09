@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SubCountriesActivity">
+    <EditText
+        android:id="@+id/sub_district1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="5dp"
+        android:hint="Name"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+    <!--  a spinner-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Spinner
+        android:id="@+id/district1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:hint="@string/district" />
+
+    <Button
+        android:id="@+id/create_btn13"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:text="Create"
+        android:textColor="#455A64"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+</LinearLayout>

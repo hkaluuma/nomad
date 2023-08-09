@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SuppliersActivity">
+    <EditText
+    android:id="@+id/supplier2"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="5dp"
+    android:hint="Name"
+    android:importantForAutofill="no"
+    android:inputType="text"
+    tools:ignore="ExtraText,HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+    <!-- need a spinner drop down-->
+    <EditText
+    android:id="@+id/category"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="select category"
+    android:importantForAutofill="no"
+    android:inputType="text"
+    tools:ignore="ExtraText,HardcodedText,LabelFor,VisualLintTextFieldSize,VisualLintBounds,TouchTargetSizeCheck" />
+    <Button
+    android:id="@+id/create_btn8"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:text="Create"
+    android:textColor="#455A64"
+    tools:ignore="HardcodedText" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>

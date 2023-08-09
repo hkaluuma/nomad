@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".CountriesActivity">
+    <!-- need to maybe deduct attributes just in case it should be exactly like the web-->
+    <!--record name,code,status-->
+    <EditText
+        android:id="@+id/countryName"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:hint="Name"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/create_btn4"
+        android:layout_width="wrap_content" android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Create"
+        android:textColor="#455A64"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

@@ -1,9 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".TotalInventoryActivity">
+    <!--need to be a spinner drop down list on inventory-->
+    <EditText
+    android:id="@+id/ed_Name"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_margin="5dp"
+    android:contentDescription="Name"
+    android:hint="Name"
+    android:importantForAutofill="no"
+    tools:ignore="ContentDescription,HardcodedText,EditableContentDescCheck,VisualLintTextFieldSize"
+    android:inputType="text" />
+    <!-- items that need the spinner :Name,country origin,manyfacturer,supplier,facility,department,section-->
+    <EditText
+    android:id="@+id/type"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:autofillHints="password"
+    android:hint="Type"
+    android:inputType="textPhonetic"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+    android:id="@+id/engraved"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="Engraved No."
+    android:importantForAutofill="no"
+    android:inputType="textPhonetic"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+    android:id="@+id/serial"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="Serial No."
+    android:importantForAutofill="no"
+    android:inputType="textPhonetic"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+    android:id="@+id/model"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="Model No."
+    android:importantForAutofill="no"
+    android:inputType="textPhonetic"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+    android:id="@+id/quantity"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="quantity"
+    android:importantForAutofill="no"
+    android:inputType="number"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+    android:id="@+id/condition"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="condition"
+    android:importantForAutofill="no"
+    android:inputType="text"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+    <!--Spinner items drop down list-->
+    <EditText
+    android:id="@+id/remark"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="remarks"
+    android:importantForAutofill="no"
+    android:inputType="text"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+    android:id="@+id/supplier1"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="supplier"
+    android:importantForAutofill="no"
+    android:inputType="text"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+    android:id="@+id/facility"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="facility"
+    android:importantForAutofill="no"
+    android:inputType="text"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+    android:id="@+id/department1"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    android:hint="department"
+    android:importantForAutofill="no"
+    android:inputType="text"
+    tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <Button
+    android:id="@+id/create_btn7"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:text="Create"
+    android:textColor="#455A64"
+    tools:ignore="HardcodedText,OnClick,TouchTargetSizeCheck" />
+</LinearLayout>
+
+

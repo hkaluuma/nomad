@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".EqClassificationActivity2">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/purple_500"
+        android:hint="CLASSIFICATION"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/classify"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:hint="code"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize"
+        android:importantForAutofill="no"/>
+    <EditText
+        android:id= "@+id/code1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:hint="category"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize"
+        android:importantForAutofill="no"/>
+    <Button
+        android:id="@+id/create_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:text="Create"
+        android:textColor="#455A64"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

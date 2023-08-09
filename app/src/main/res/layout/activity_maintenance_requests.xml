@@ -1,9 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MaintenanceRequestsActivity">
+    android:orientation="vertical"
+    tools:context=".ScoreSheetActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/workshop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="Workshop"
+        android:importantForAutofill="no"
+        android:inputType="textPhonetic"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/availability"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="Staff_available_for_maintenance"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        tools:ignore="HardcodedText,InvalidId,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/budget"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="Time_release_budget_to_team"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/inventory_update"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="ME_inventory_properly_updated_in_nomad"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+
+
+    <EditText
+        android:id="@+id/spare"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="spare_parts_purchased_in_time"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/preventive"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="Preventive_maintenance"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/maintain"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="Routine_maintenance"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/planned"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="Planned_conducted_user_training"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="Timely_submissions_reports"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="HardcodedText,MissingPrefix,TouchTargetSizeCheck,VisualLintBounds,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/implementation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="Implementation_of_activities"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="HardcodedText,VisualLintBounds,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/create_btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="create"
+        android:textColor="#455A64"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

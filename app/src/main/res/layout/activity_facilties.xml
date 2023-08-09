@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FacilitiesActivity">
+    <!-- need to be spinners,subdistrict,facilitylevel,ownership,authority,status-->
+    <EditText
+        android:id ="@+id/fac_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        tools:ignore="VisualLintTextFieldSize" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- need to put them in a spinner,spinner mode:dropdown-->
+    <Spinner
+        android:id="@+id/sub_district"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        />
+
+    <Spinner
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/facility_level"
+        android:layout_margin="5dp"
+        />
+    <Spinner
+        android:id="@+id/fownership1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/ownership"
+        android:layout_margin="5dp" />
+    <Spinner
+        android:id="@+id/authority"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="text"
+        android:hint="functional_auth"
+        android:layout_margin="5dp"/>
+    <Spinner
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="text"
+        android:hint="@string/functional_status"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="number"
+        android:hint="Dhis2id"
+        android:layout_margin="5dp"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize"
+        android:importantForAutofill="no" />
+    <Button
+        android:id="@+id/create_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Create"
+        android:textColor="#455A64"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

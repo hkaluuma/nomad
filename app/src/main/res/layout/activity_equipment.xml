@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".EquipmentActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="number"
+        android:hint="Name"
+        android:layout_margin="5dp"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize"
+        android:importantForAutofill="no" />
+
+    <!--change to a spinner,code and type-->
+    <Spinner
+        android:id="@+id/type1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:hint="@string/type" />
+    <Spinner
+        android:id="@+id/code1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:hint="@string/select_code" />
+
+    <EditText
+        android:id="@+id/recommendation1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="recomm HC_II"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/recommendation2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="recomm HC_III"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/recommendation3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="recomm HC_IV"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/recommendation4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="recomm GH"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/recommendation5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="recomm RRH"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="recomm NRH"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="ExtraText,HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="unit_cost"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="ExtraText,HardcodedText,LabelFor,VisualLintTextFieldSize,VisualLintBounds,TouchTargetSizeCheck" />
+    <Button
+        android:id="@+id/create_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Create"
+        android:textColor="#455A64"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

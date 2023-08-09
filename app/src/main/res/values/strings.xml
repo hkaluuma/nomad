@@ -13,4 +13,15 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="Forgot_Password">Forgot Password</string>
     <string name="username">username</string>
+    <string name="district">district</string>
+    <string name="textview">textview</string>
+    <string name="create">Create</string>
+    <string name="region">region</string>
+    <string name="region_workshop">region_workshop</string>
+    <string name="type">type</string>
+    <string name="select_code">select_code</string>
+    <string name="name">name</string>
+    <string name="facility_level">facility_level</string>
+    <string name="ownership">ownership</string>
+    <string name="functional_status">functional_status</string>
 </resources>

@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DistrictActivity">
+    tools:context=".DistrictActivity"
+    android:orientation="vertical">
+    <!--need a spinner dropdown for Region and workshop-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/workshop"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        android:layout_margin="5dp"
+        android:importantForAutofill="no"
+        android:hint="Name"
+        tools:ignore="HardcodedText,LabelFor,VisualLintTextFieldSize" />
+
+    <Spinner
+        android:id="@+id/region1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/region"/>
+    <Spinner
+        android:id="@+id/region_workshop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/region_workshop"
+        />
+    <Button
+        android:id="@+id/create_btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Create"
+        android:textColor="#455A64"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

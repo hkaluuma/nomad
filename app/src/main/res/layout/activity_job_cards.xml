@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".JobCardsActivity">
+    <EditText
+    android:id="@+id/record_name"
+    android:inputType="text"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:hint="record name"
+    android:layout_margin="5dp"
+    android:importantForAutofill="no" />
+    <EditText
+    android:id="@+id/service_date"
+    android:layout_height="60dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:hint="next_service"
+    tools:ignore="HardcodedText,VisualLintTextFieldSize"
+    android:importantForAutofill="no"
+    android:inputType="date" />
+    <EditText
+    android:id="@+id/fault"
+    android:inputType="text"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:hint="fault_detected"
+    android:layout_margin="5dp"
+    tools:ignore="HardcodedText,VisualLintTextFieldSize"
+    android:importantForAutofill="no" />
+    <EditText
+    android:id="@+id/work"
+    android:inputType="text"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:hint="workdone"
+    android:layout_margin="5dp"
+    tools:ignore="HardcodedText,VisualLintTextFieldSize"
+    android:importantForAutofill="no" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+    android:id="@+id/notes"
+    android:inputType="text"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:hint="notes"
+    android:layout_margin="5dp"
+    android:textStyle="normal"
+    tools:ignore="HardcodedText,TextSizeCheck,VisualLintTextFieldSize"
+    android:importantForAutofill="no" />
+    <EditText
+    android:id="@+id/original_status"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:inputType="text"
+    android:layout_margin="5dp"
+    android:hint="original_status"
+    android:textStyle="normal"
+    tools:ignore="HardcodedText,VisualLintTextFieldSize"
+    android:importantForAutofill="no" />
+    <EditText
+    android:id="@+id/final_status"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:hint="Updated_at"
+    android:textStyle="normal"
+    tools:ignore="HardcodedText,VisualLintTextFieldSize"
+    android:importantForAutofill="no"
+    android:inputType="text" />
+    <EditText
+    android:id="@+id/fac_comment"
+    android:layout_height="60dp"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:hint="fac_comment"
+    android:textStyle="normal"
+    tools:ignore="HardcodedText,VisualLintTextFieldSize"
+    android:importantForAutofill="no"
+    android:inputType="text" />
+
+    <Button
+    android:id="@+id/create_btn9"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_gravity="center"
+    android:text="Create"
+    android:textColor="#455A64"
+    tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
