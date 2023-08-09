@@ -15,17 +15,16 @@
     android:inputType="text"
     tools:ignore="ExtraText,HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     <!-- need a spinner drop down-->
-    <EditText
+    <Spinner
     android:id="@+id/category"
     android:layout_width="match_parent"
     android:layout_height="40dp"
     android:layout_margin="5dp"
-    android:hint="select category"
-    android:importantForAutofill="no"
-    android:inputType="text"
-    tools:ignore="ExtraText,HardcodedText,LabelFor,VisualLintTextFieldSize,VisualLintBounds,TouchTargetSizeCheck" />
+    android:text="@string/select_category"
+        tools:ignore="HardcodedText" />
     <Button
     android:id="@+id/create_btn8"
+        android:layout_marginTop="40dp"
     android:layout_width="wrap_content"
     android:layout_height="50dp"
     android:layout_gravity="center"

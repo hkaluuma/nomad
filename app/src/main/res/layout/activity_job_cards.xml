@@ -11,9 +11,10 @@
     android:inputType="text"
     android:layout_height="60dp"
     android:layout_width="match_parent"
-    android:hint="record name"
+    android:hint="@string/record_name"
     android:layout_margin="5dp"
-    android:importantForAutofill="no" />
+    android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
     <EditText
     android:id="@+id/service_date"
     android:layout_height="60dp"

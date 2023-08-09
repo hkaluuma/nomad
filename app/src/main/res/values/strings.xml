@@ -24,4 +24,12 @@
     <string name="facility_level">facility_level</string>
     <string name="ownership">ownership</string>
     <string name="functional_status">functional_status</string>
+    <string name="record_name">record name</string>
+    <string name="category">category</string>
+    <string name="condition">condition</string>
+    <string name="supplier">supplier</string>
+    <string name="department">department</string>
+    <string name="select_category">select category</string>
+    <string name="select_equipment">Select Equipment</string>
+    <string name="department1">department1</string>
 </resources>

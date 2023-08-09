@@ -41,7 +41,7 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         //new codes
-        //make refferences to the widgets
+        //make references to the widgets
         Button btn_reg = findViewById(R.id.btn_register);
         EditText  edx_name = findViewById(R.id.edt_name);
         EditText  edx_usrname = findViewById(R.id.edt_username);
