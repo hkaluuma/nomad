@@ -52,14 +52,12 @@ public class DepartmentsActivity extends AppCompatActivity {
                 if (depart.isEmpty()) {
                     department.setError("Department is required");
 
-                } else {
-                    // may not be connected to the internet
-                    Toast.makeText(DepartmentsActivity.this, "No internet Connection", Toast.LENGTH_SHORT).show();
                 }
-                if (haveNetworkConnection())
-                    Toast.makeText(DepartmentsActivity.this, " Connected", Toast.LENGTH_SHORT).show();
-                else {
-                    Toast.makeText(DepartmentsActivity.this, "No internet Connection", Toast.LENGTH_SHORT).show();
+                else if (!haveNetworkConnection())
+                    Toast.makeText(DepartmentsActivity.this, " No internet Connected", Toast.LENGTH_SHORT).show();
+                else
+                {
+                    new Departmentclass().execute();
                 }
 
             }
