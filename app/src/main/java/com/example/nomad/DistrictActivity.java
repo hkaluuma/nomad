@@ -97,11 +97,12 @@ public class DistrictActivity extends AppCompatActivity {
                     Toast.makeText(DistrictActivity.this, "Select Workshop", Toast.LENGTH_SHORT).show();
                 }
 
-                if (haveNetworkConnection())
-                    Toast.makeText(DistrictActivity.this, " Connected", Toast.LENGTH_SHORT).show();
+                else if (!haveNetworkConnection())
+                    Toast.makeText(DistrictActivity.this, "No internet Connection ", Toast.LENGTH_SHORT).show();
                 else {
-                    Toast.makeText(DistrictActivity.this, "No internet Connection", Toast.LENGTH_SHORT).show();
+                    new Districtclass().execute();
                 }
+
 
 
             }

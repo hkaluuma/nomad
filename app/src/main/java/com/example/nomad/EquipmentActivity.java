@@ -111,9 +111,13 @@ public class EquipmentActivity extends AppCompatActivity {
                 }
                 if (amount.isEmpty()) {
                     edtName.setError("Name is Required");
-                } else if (selectedType.equals("not specified")) {
+                }
+                else if (selectedType.equals("not specified"))
+                {
                     Toast.makeText(EquipmentActivity.this, "Select Type", Toast.LENGTH_SHORT).show();
-                } else if (selectedCode.equals("not specified")) {
+                }
+                else if (selectedCode.equals("not specified"))
+                {
                     Toast.makeText(EquipmentActivity.this, "Select Code", Toast.LENGTH_SHORT).show();
                     // Boolean haveNetworkConnection;
 
