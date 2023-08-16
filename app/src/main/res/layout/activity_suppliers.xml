@@ -16,11 +16,11 @@
     tools:ignore="ExtraText,HardcodedText,LabelFor,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     <!-- need a spinner drop down-->
     <Spinner
-    android:id="@+id/category"
-    android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:layout_margin="5dp"
-    android:text="@string/select_category"
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:text="@string/select_category"
         tools:ignore="HardcodedText" />
     <Button
     android:id="@+id/create_btn8"
