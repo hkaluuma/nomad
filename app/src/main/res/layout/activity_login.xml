@@ -36,7 +36,7 @@
         android:autofillHints="password"
         android:textColor="@color/black"
         android:hint="password"
-        android:inputType="textVisiblePassword"
+        android:inputType="textPassword"
         android:textSize="20sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText,LabelFor,ObsoleteLayoutParam,VisualLintTextFieldSize" />
@@ -52,16 +52,37 @@
         android:layout_gravity="center"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_below="@+id/login"
-        android:layout_gravity="right"
-        android:layout_marginTop="20dp"
-        android:text="@string/Forgot_Password"
-        android:textColor="@color/black"
-        tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/register"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/login"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/login"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:text="@string/Forgot_Password"
+            android:textColor="@color/black"
+            tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+    </LinearLayout>
 
 </LinearLayout>
