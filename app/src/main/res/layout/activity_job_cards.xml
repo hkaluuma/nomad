@@ -14,7 +14,7 @@
     android:hint="@string/record_name"
     android:layout_margin="5dp"
     android:importantForAutofill="no"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
     <EditText
     android:id="@+id/service_date"
     android:layout_height="60dp"
@@ -68,7 +68,7 @@
     android:layout_height="60dp"
     android:layout_width="match_parent"
     android:layout_margin="5dp"
-    android:hint="Updated_at"
+    android:hint="finalStatus"
     android:textStyle="normal"
     tools:ignore="HardcodedText,VisualLintTextFieldSize"
     android:importantForAutofill="no"
