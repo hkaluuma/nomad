@@ -6,7 +6,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".JobCardsActivity">
-    <EditText
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
     android:id="@+id/record_name"
     android:inputType="text"
     android:layout_height="60dp"
@@ -92,6 +102,10 @@
     android:text="Create"
     android:textColor="#455A64"
     tools:ignore="HardcodedText,TouchTargetSizeCheck" />
-    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
 
 
