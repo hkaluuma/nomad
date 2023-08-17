@@ -25,27 +25,27 @@
         />
 
     <Spinner
-        android:id="@+id/level"
+        android:id="@+id/faclevelOptions"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="@string/facility_level"
         android:layout_margin="5dp"
         />
     <Spinner
-        android:id="@+id/fownership1"
+        android:id="@+id/facownerOptions"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="@string/ownership"
         android:layout_margin="5dp" />
     <Spinner
-        android:id="@+id/authority"
+        android:id="@+id/fAuthorityOptions"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:inputType="text"
-        android:hint="functional_auth"
+        android:hint="@string/authority"
         android:layout_margin="5dp"/>
     <Spinner
-        android:id="@+id/status"
+        android:id="@+id/facStatusOptions"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:inputType="text"
