@@ -11,18 +11,19 @@
     <ImageView
         android:layout_width="187dp"
         android:layout_height="75dp"
-        android:src="@drawable/nomad" />
+        android:src="@drawable/nomad"
+        android:contentDescription="@string/image" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
-        android:text="New Order for Managing Anything Data"
+        android:text="@string/new_order_for_managing_anything_data"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="rsenono@idi.co.ug"/>
+        android:text="@string/rsenono_idi_co_ug"/>
 
 </LinearLayout>

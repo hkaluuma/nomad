@@ -33,4 +33,7 @@
     <string name="select_equipment">Select Equipment</string>
     <string name="department1">department1</string>
     <string name="register">register</string>
+    <string name="rsenono_idi_co_ug">rsenono@idi.co.ug</string>
+    <string name="new_order_for_managing_anything_data">New Order for Managing Anything Data</string>
+    <string name="image">image</string>
 </resources>

@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
                         // connected
                        // CreateLogin createLogin = new CreateLogin();
                         //createLogin.execute();
-                        Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
                     } else {
@@ -178,7 +178,7 @@ public class LoginActivity extends AppCompatActivity {
                 editor.putString("email", usercredentials[4]);
                 editor.putString("id", usercredentials[5]);
                 editor.commit();
-                Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
