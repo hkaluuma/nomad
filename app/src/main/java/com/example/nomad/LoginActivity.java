@@ -53,8 +53,10 @@ public class LoginActivity extends AppCompatActivity {
         final EditText editTextpassword = findViewById(R.id.ed_pwd);
         final Button btn1 = findViewById(R.id.login_btn);
         final Button btn2 = findViewById(R.id.forgot_password);
+        final Button btn12 = findViewById(R.id.register);
         YoYo.with(Techniques.Shake).duration(10000).repeat(10).playOn(btn1);
         YoYo.with(Techniques.Shake).duration(10000).repeat(10).playOn(btn2);
+        YoYo.with(Techniques.Shake).duration(10000).repeat(10).playOn(btn12);
         //YoYo.with(Techniques.DropOut).duration(100).repeat(10).playOn(imgicon);
 
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +65,14 @@ public class LoginActivity extends AppCompatActivity {
                 YoYo.with(Techniques.FlipOutX).duration(100).repeat(0).playOn(btn2);
                 Intent forgotintent = new Intent(LoginActivity.this, Forgot_password.class);
                 startActivity(forgotintent);
+            }
+        });
+        btn12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                YoYo.with(Techniques.FlipOutX).duration(100).repeat(0).playOn(btn12);
+                Intent registerintent = new Intent(LoginActivity.this, RegistrationActivity.class);
+                startActivity(registerintent);
             }
         });
 
@@ -112,7 +122,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         return haveConnectedWifi || haveConnectedMobile;
     }
-    //async task class to login
+    /** @noinspection deprecation*/ //async task class to login
     class CreateLogin extends AsyncTask<String, String, String> {
         String responcefromphp;
         //create progress dialog class

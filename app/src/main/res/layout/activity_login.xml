@@ -16,7 +16,7 @@
     <EditText
         android:id="@+id/ed_username"
         android:layout_width="match_parent"
-        android:layout_height="47dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:autofillHints="username"
@@ -43,6 +43,7 @@
 
     <Button
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:clickable="false"
