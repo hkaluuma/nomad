@@ -19,11 +19,10 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        android:autofillHints="username"
         android:hint="@string/username"
         android:inputType="textPersonName"
         android:padding="5dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -34,7 +33,7 @@
         android:layout_below="@+id/edit_text_username"
         android:layout_margin="5dp"
         android:autofillHints="password"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:hint="password"
         android:inputType="textPassword"
         android:textSize="20sp"
