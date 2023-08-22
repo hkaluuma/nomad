@@ -109,7 +109,7 @@ public class RegistrationActivity extends AppCompatActivity {
             //upload data to the database
             try {
                 DefaultHttpClient httpclient = new DefaultHttpClient();
-                HttpPost httppost = new HttpPost("http://172.31.2.75/nomad/register.php");
+                HttpPost httppost = new HttpPost("http://172.31.2.26/nomad/register.php");
                 ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(4);
                 nameValuePairs.add(new BasicNameValuePair("name", name));
                 nameValuePairs.add(new BasicNameValuePair("username", username));
