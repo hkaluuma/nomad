@@ -1,6 +1,7 @@
 package com.example.nomad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -28,6 +29,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class DistrictActivity extends AppCompatActivity {
@@ -45,6 +47,10 @@ public class DistrictActivity extends AppCompatActivity {
         Spinner Region = findViewById(R.id.region1);
         Spinner region_workshop = findViewById(R.id.region_workshop);
         Button btn4 = findViewById(R.id.create_btn5);
+        Toolbar toolbar14 = findViewById(R.id.toolbar14);
+        setSupportActionBar(toolbar14);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // data source from where the spinner will pick
         String[] RegName ={"Eastern","Northern","Southern","Western"};

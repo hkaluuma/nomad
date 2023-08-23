@@ -1,6 +1,7 @@
 package com.example.nomad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -28,6 +29,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class EquipmentActivity extends AppCompatActivity {
@@ -51,11 +53,17 @@ public class EquipmentActivity extends AppCompatActivity {
     EditText edtNRH = findViewById(R.id.record);
     EditText cost = findViewById(R.id.cost);
     Button btn2 = findViewById(R.id.create_btn2);
+    Toolbar toolbar12 = findViewById(R.id.toolbar12);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equipment);
+        setSupportActionBar(toolbar12);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
 
         // data source from where the spinner will pick
         String[] EquipmentType = {"8888", "needle", "injection"};

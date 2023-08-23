@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".AuthoritiesActivity">
+    <!--include the toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        android:textDirection="inherit"
+        />
 
     <EditText
         android:id="@+id/authority"

@@ -1,6 +1,7 @@
 package com.example.nomad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -25,6 +26,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class EqClassificationActivity2 extends AppCompatActivity {
@@ -38,11 +40,15 @@ public class EqClassificationActivity2 extends AppCompatActivity {
     EditText ed_classify = findViewById(R.id.classify);
     EditText ed_code = findViewById(R.id.code1);
     Button btn1 = findViewById(R.id.create_btn1);
+    Toolbar toolbar13 = findViewById(R.id.toolbar13);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eq_classification2);
+        setSupportActionBar(toolbar13);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

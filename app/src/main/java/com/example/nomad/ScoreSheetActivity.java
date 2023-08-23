@@ -3,6 +3,7 @@ package com.example.nomad;
 import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -26,6 +27,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ScoreSheetActivity extends AppCompatActivity {
     //Instantiating the config class
@@ -41,6 +43,7 @@ public class ScoreSheetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_score_sheet);
 
         // making references of the widgets to the xml
+        Toolbar toolbar8 = findViewById(R.id.toolbar8);
 
         EditText wrkshp = findViewById(R.id.workshop);
         EditText staff = findViewById(R.id.availability);
@@ -51,6 +54,9 @@ public class ScoreSheetActivity extends AppCompatActivity {
         EditText routine = findViewById(R.id.maintain);
         EditText planned = findViewById(R.id.planned);
         Button btn8 = findViewById(R.id.create_btn8);
+        setSupportActionBar(toolbar8);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // setting the onclick-listener
 

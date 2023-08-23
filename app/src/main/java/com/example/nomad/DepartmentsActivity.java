@@ -3,6 +3,7 @@ package com.example.nomad;
 import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -28,6 +29,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class DepartmentsActivity extends AppCompatActivity {
@@ -46,6 +48,11 @@ public class DepartmentsActivity extends AppCompatActivity {
         // making references to xml
         EditText department = findViewById(R.id.department);
         Button btn4 = findViewById(R.id.create_btn4);
+        Toolbar toolbar4 = findViewById(R.id.toolbar4);
+
+        setSupportActionBar(toolbar4);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // setting the button onclick
         btn4.setOnClickListener(new View.OnClickListener() {

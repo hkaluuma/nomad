@@ -1,6 +1,7 @@
 package com.example.nomad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -29,6 +30,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class FacilitiesActivity extends AppCompatActivity {
@@ -46,6 +48,7 @@ public class FacilitiesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_facilties);
 
 // making reference to the facilities widgets
+        Toolbar toolbar11 = findViewById(R.id.toolbar11);
         EditText fName =  findViewById(R.id.fac_name);
         Spinner sub_districtSpinner =  findViewById(R.id.sub_district);
         Spinner flevelSpinner =findViewById(R.id.faclevelOptions);
@@ -54,6 +57,9 @@ public class FacilitiesActivity extends AppCompatActivity {
         Spinner statusSpinner  = findViewById(R.id.facStatusOptions);
         EditText fcode =findViewById(R.id.code);
         Button btn3 = findViewById(R.id.create_btn3);
+        setSupportActionBar(toolbar11);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // data source from where the spinner will pick
         String[] subDistrict={"Moroto","Gulu","Arua","Abim"};

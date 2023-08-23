@@ -3,6 +3,7 @@ package com.example.nomad;
 import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -28,6 +29,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class SectionsActivity extends AppCompatActivity {
@@ -41,9 +43,13 @@ public class SectionsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sections);
-
+        Toolbar toolbar5 = findViewById(R.id.toolbar5);
         EditText sectionEditText = findViewById(R.id.section);
         Button btn6 = findViewById(R.id.create_btn6);
+        setSupportActionBar(toolbar5);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

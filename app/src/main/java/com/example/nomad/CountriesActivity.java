@@ -1,6 +1,7 @@
 package com.example.nomad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -25,6 +26,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class CountriesActivity extends AppCompatActivity {
@@ -42,6 +44,10 @@ public class CountriesActivity extends AppCompatActivity {
             // making reference to the xml
             EditText countryName = findViewById(R.id.countryName);
             Button btn4 = findViewById(R.id.create_btn4);
+            Toolbar toolbar15 = findViewById(R.id.toolbar15);
+            setSupportActionBar(toolbar15);
+            //Enabling the navigation
+            Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
             // setting the button click
             btn4.setOnClickListener(new View.OnClickListener() {

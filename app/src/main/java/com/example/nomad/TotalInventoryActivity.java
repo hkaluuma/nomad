@@ -3,6 +3,7 @@ package com.example.nomad;
 import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -31,6 +32,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class TotalInventoryActivity extends AppCompatActivity {
@@ -51,6 +53,7 @@ public class TotalInventoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_total_inventory);
         // making reference to the widgets in the xml
+        Toolbar toolbar = findViewById(R.id.toolbar2);
 
         EditText ed_Type = findViewById(R.id.type);
         EditText ed_engraved = findViewById(R.id.engraved);
@@ -65,6 +68,9 @@ public class TotalInventoryActivity extends AppCompatActivity {
         Button btn7 = findViewById(R.id.create_btn7);
         EditText ed_inventory = findViewById(R.id.ed_Name);
 
+     setSupportActionBar(toolbar);
+     //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // data source from where the spinner will pick
         String[] Supplier = {"8888", "needle", "injection"};

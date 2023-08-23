@@ -1,6 +1,7 @@
 package com.example.nomad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -14,6 +15,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 /** @noinspection deprecation*/
 public class SubCountriesActivity extends AppCompatActivity {
     String selectedDistrict,sub_area;
@@ -25,10 +28,14 @@ public class SubCountriesActivity extends AppCompatActivity {
 
 
         // making references to the widgets in the xml
-
+        Toolbar toolbar6 = findViewById(R.id.toolbar6);
         EditText sub_district1 = findViewById(R.id.sub_district1);
         Spinner district1 = findViewById(R.id.district1);
         Button btn13 = findViewById(R.id.create_btn13);
+        setSupportActionBar(toolbar6);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
         // data source from where the spinner will pick
         String[] DistrictName ={"Kampala","Wakiso","Nakasero"};
 

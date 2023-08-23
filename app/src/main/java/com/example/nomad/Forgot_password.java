@@ -1,6 +1,7 @@
 package com.example.nomad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -25,6 +26,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /** @noinspection deprecation*/
 public class Forgot_password extends AppCompatActivity {
@@ -40,6 +42,10 @@ public class Forgot_password extends AppCompatActivity {
         // making references to the xml
         EditText emailAddress = findViewById(R.id.address);
         Button resetButton = findViewById(R.id.reset);
+        Toolbar toolbar10 = findViewById(R.id.toolbar10);
+        setSupportActionBar(toolbar10);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         //setting an Onclick listener
         resetButton.setOnClickListener(new View.OnClickListener() {

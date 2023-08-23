@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".TotalInventoryActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".TotalInventoryActivity">
-
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:titleTextColor="@color/white"
+        app:title="TOTAL INVENTORY"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <!--need to be a spinner drop down list on inventory-->
             <EditText
@@ -26,7 +36,7 @@
                 android:importantForAutofill="no"
                 tools:ignore="ContentDescription,HardcodedText,EditableContentDescCheck,VisualLintTextFieldSize"
                 android:inputType="text" />
-            <!-- items that need the spinner :Name,country origin,manyfacturer,supplier,facility,department,section-->
+            <!-- items that need the spinner :Name,country origin,manufacturer,supplier,facility,department,section-->
             <EditText
                 android:id="@+id/type"
                 android:layout_width="match_parent"

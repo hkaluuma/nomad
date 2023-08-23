@@ -3,6 +3,7 @@ package com.example.nomad;
 import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -31,6 +32,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ManufacturerActivity extends AppCompatActivity {
     Config config = new Config();
@@ -43,10 +45,14 @@ public class ManufacturerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manufacturer);
         // making references to the xml
+        Toolbar toolbar9 = findViewById(R.id.toolbar9);
 
         EditText manufacturer = findViewById(R.id.manufacturer);
         Spinner category1 = findViewById(R.id.category);
         Button btn12 = findViewById(R.id.create_btn12);
+        setSupportActionBar(toolbar9);
+        //Enabling the navigation
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // data source from where the spinner will pick
         String[] category = {"8888", "****", "??????"};
