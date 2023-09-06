@@ -46,7 +46,7 @@ public class MaintenanceRequestsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintenance_requests);
         //making references to the xml widgets
-        Toolbar toolbar4 = findViewById(R.id.toolbar7);
+        //Toolbar toolbar4 = findViewById(R.id.toolbar7);
         Button btn8 = findViewById(R.id.create_btn8);
         Spinner edEquipment = findViewById(R.id.equipment);
         EditText edFacility = findViewById(R.id.facility1);
@@ -57,7 +57,7 @@ public class MaintenanceRequestsActivity extends AppCompatActivity {
         EditText edSerial = findViewById(R.id.Serial1);
         EditText edDescription = findViewById(R.id.description);
 
-        setSupportActionBar(toolbar4);
+        //setSupportActionBar(toolbar4);
         //Enabling the navigation
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 

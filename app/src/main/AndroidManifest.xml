@@ -4,8 +4,8 @@
     package="com.example.nomad">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,15 +15,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Nomad.NoActionBar"
+        android:theme="@style/Theme.Nomad"
         tools:targetApi="31">
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
         <activity
             android:name=".RegistrationActivity"
             android:exported="true"
             android:label="Registration"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".ScoreSheetActivity"
             android:exported="false"
@@ -117,8 +118,7 @@
         <activity
             android:name=".NavigationMenuActivity"
             android:exported="true"
-            android:theme="@style/Theme.Nomad.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Nomad.NoActionBar"></activity>
         <activity
             android:name=".LoginActivity"
             android:exported="false"
@@ -132,12 +132,11 @@
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/SplashScreen">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

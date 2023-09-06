@@ -44,7 +44,7 @@ public class JobCardsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_job_cards);
 
         // making references to the xml
-        Toolbar toolbar3 = findViewById(R.id.toolbar3);
+        //Toolbar toolbar3 = findViewById(R.id.toolbar3);
         EditText record_name = findViewById(R.id.record_name);
         EditText service_date = findViewById(R.id.service_date);
         EditText fault = findViewById(R.id.fault);
@@ -54,7 +54,7 @@ public class JobCardsActivity extends AppCompatActivity {
         EditText fac_comment = findViewById(R.id.fac_comment);
         Button btn9 = findViewById(R.id.create_btn9);
 
-        setSupportActionBar(toolbar3);
+        //setSupportActionBar(toolbar3);
         //Enabling the navigation
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 

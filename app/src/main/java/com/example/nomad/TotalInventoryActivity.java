@@ -68,7 +68,7 @@ public class TotalInventoryActivity extends AppCompatActivity {
         Button btn7 = findViewById(R.id.create_btn7);
         EditText ed_inventory = findViewById(R.id.ed_Name);
 
-     setSupportActionBar(toolbar);
+     //setSupportActionBar(toolbar);
      //Enabling the navigation
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 

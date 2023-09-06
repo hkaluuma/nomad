@@ -7,14 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".JobCardsActivity">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/purple_500"
-        app:navigationIcon="@drawable/ic_back_arrow"
-        app:titleTextColor="@color/white"
-        app:title="JobCard"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
