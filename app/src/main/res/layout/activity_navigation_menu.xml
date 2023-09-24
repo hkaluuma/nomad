@@ -15,7 +15,7 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            android:theme="@style/Theme.Nomad.AppBarOverlay">
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -24,7 +24,8 @@
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
         </com.google.android.material.appbar.AppBarLayout>
 
-        <include layout="@layout/activity_home"/>
+        <include layout="@layout/activity_main" />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton"
             android:layout_width="wrap_content"
@@ -35,7 +36,6 @@
             android:src="@drawable/baseline_email_24"
             tools:ignore="ContentDescription"
             android:focusable="true" />
-
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

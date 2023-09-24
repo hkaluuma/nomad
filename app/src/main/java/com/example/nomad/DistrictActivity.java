@@ -47,10 +47,6 @@ public class DistrictActivity extends AppCompatActivity {
         Spinner Region = findViewById(R.id.region1);
         Spinner region_workshop = findViewById(R.id.region_workshop);
         Button btn4 = findViewById(R.id.create_btn5);
-        Toolbar toolbar14 = findViewById(R.id.toolbar14);
-        setSupportActionBar(toolbar14);
-        //Enabling the navigation
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // data source from where the spinner will pick
         String[] RegName ={"Eastern","Northern","Southern","Western"};
@@ -58,11 +54,11 @@ public class DistrictActivity extends AppCompatActivity {
 
         //configuring the array adapter for the spinner-acts the glue
 
-        ArrayAdapter<String> regionAdapter = new ArrayAdapter<>(DistrictActivity.this,R.layout.spinner_item,R.id.region1,RegName);
-        ArrayAdapter<String> workshopAdapter = new ArrayAdapter<>(DistrictActivity.this,R.layout.spinner_item,R.id.region_workshop,RegWorkshop);
+        //ArrayAdapter<String> regionAdapter = new ArrayAdapter<>(DistrictActivity.this,R.layout.spinner_item,R.id.region1,RegName);
+        //ArrayAdapter<String> workshopAdapter = new ArrayAdapter<>(DistrictActivity.this,R.layout.spinner_item,R.id.region_workshop,RegWorkshop);
         // assign Array adapter to the spinner
-        Region.setAdapter(regionAdapter);
-        region_workshop.setAdapter(workshopAdapter);
+        //Region.setAdapter(regionAdapter);
+        //region_workshop.setAdapter(workshopAdapter);
 
         // selecting an Item from the spinner
         Region.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){

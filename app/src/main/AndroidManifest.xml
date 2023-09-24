@@ -127,7 +127,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.Nomad.NoActionBar" />
+            android:label="HomePage"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true"

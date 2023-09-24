@@ -44,10 +44,6 @@ public class CountriesActivity extends AppCompatActivity {
             // making reference to the xml
             EditText countryName = findViewById(R.id.countryName);
             Button btn4 = findViewById(R.id.create_btn4);
-            Toolbar toolbar15 = findViewById(R.id.toolbar15);
-            setSupportActionBar(toolbar15);
-            //Enabling the navigation
-            Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
             // setting the button click
             btn4.setOnClickListener(new View.OnClickListener() {

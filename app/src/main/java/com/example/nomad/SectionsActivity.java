@@ -46,9 +46,6 @@ public class SectionsActivity extends AppCompatActivity {
         Toolbar toolbar5 = findViewById(R.id.toolbar5);
         EditText sectionEditText = findViewById(R.id.section);
         Button btn6 = findViewById(R.id.create_btn6);
-        setSupportActionBar(toolbar5);
-        //Enabling the navigation
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override

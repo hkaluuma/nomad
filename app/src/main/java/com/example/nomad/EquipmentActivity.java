@@ -41,7 +41,6 @@ public class EquipmentActivity extends AppCompatActivity {
     String Name, selectedType, selectedCode, hc2, hc3, hc4, GH, RRH, NRH, amount;
 
 // Referencing  of the widgets in equipment.xml
-
     EditText edtName = findViewById(R.id.Name);
     Spinner edttype = findViewById(R.id.type1);
     Spinner edtcode = findViewById(R.id.code1);
@@ -60,10 +59,6 @@ public class EquipmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equipment);
-        setSupportActionBar(toolbar12);
-        //Enabling the navigation
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-
 
         // data source from where the spinner will pick
         String[] EquipmentType = {"8888", "needle", "injection"};

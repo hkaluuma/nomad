@@ -93,7 +93,7 @@ public class LoginActivity extends AppCompatActivity {
                        // CreateLogin createLogin = new CreateLogin();
                         //createLogin.execute();
                         Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), NavigationMenuActivity.class);
                         startActivity(intent);
                     } else {
                         // not connected

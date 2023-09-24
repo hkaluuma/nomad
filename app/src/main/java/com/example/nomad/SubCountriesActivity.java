@@ -32,9 +32,6 @@ public class SubCountriesActivity extends AppCompatActivity {
         EditText sub_district1 = findViewById(R.id.sub_district1);
         Spinner district1 = findViewById(R.id.district1);
         Button btn13 = findViewById(R.id.create_btn13);
-        setSupportActionBar(toolbar6);
-        //Enabling the navigation
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // data source from where the spinner will pick
         String[] DistrictName ={"Kampala","Wakiso","Nakasero"};

@@ -57,9 +57,6 @@ public class FacilitiesActivity extends AppCompatActivity {
         Spinner statusSpinner  = findViewById(R.id.facStatusOptions);
         EditText fcode =findViewById(R.id.code);
         Button btn3 = findViewById(R.id.create_btn3);
-        setSupportActionBar(toolbar11);
-        //Enabling the navigation
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // data source from where the spinner will pick
         String[] subDistrict={"Moroto","Gulu","Arua","Abim"};

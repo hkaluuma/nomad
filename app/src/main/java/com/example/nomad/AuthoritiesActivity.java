@@ -49,9 +49,6 @@ public class AuthoritiesActivity extends AppCompatActivity {
         // making references to the xml widgets
         EditText ed_authority = findViewById(R.id.authority);
         Button btn4 = findViewById(R.id.create_btn4);
-        setSupportActionBar(toolbar1);
-        //Enabling the navigation
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         //setting the On-click listener
         btn4.setOnClickListener(new View.OnClickListener() {

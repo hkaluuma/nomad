@@ -48,11 +48,6 @@ public class DepartmentsActivity extends AppCompatActivity {
         // making references to xml
         EditText department = findViewById(R.id.department);
         Button btn4 = findViewById(R.id.create_btn4);
-        Toolbar toolbar4 = findViewById(R.id.toolbar4);
-
-        setSupportActionBar(toolbar4);
-        //Enabling the navigation
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // setting the button onclick
         btn4.setOnClickListener(new View.OnClickListener() {

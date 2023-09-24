@@ -24,6 +24,7 @@
     <style name="Theme.Nomad.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.Nomad.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
     <!-- splash screen theme -->
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar" >
         <item name="android:windowBackground">@drawable/background_splashscreen</item>
